@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+
+    android:background="#f5f5f5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/fl_seller_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_seller_user_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_seller_user_home"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/seller_home_checked" />
+
+            <TextView
+                android:id="@+id/tv_seller_user_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="主页"
+                android:textColor="#f23030"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_seller_user_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_seller_user_my"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/seller_my_unchecked" />
+
+            <TextView
+                android:id="@+id/tv_seller_user_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="我的"
+                android:textColor="#5d5f6a"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/plus_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/yuan_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/plus_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+
+                android:src="@drawable/plus_yuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plus_yuan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="7dp"
+                android:text="发布"
+                android:textColor="#5d5f6a"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/yuan_rl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/takephoto"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/take_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/take_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/takevideo"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/upload_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/take_video"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/uploadvideo"
+            android:visibility="gone" />
+        <!--<View-->
+        <!--android:id="@+id/jiange01"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_above="@+id/yuan_rl"-->
+        <!--android:layout_alignRight="@+id/yuan_rl"-->
+        <!--android:layout_marginRight="15dp" />-->
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_write"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/write1"-->
+        <!--android:layout_above="@+id/jiange01"-->
+        <!--android:layout_alignRight="@+id/jiange01"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/dishui_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/jiange01"-->
+        <!--android:layout_toLeftOf="@+id/iv_fabuhuodong"-->
+        <!--android:background="@drawable/border_radius"-->
+        <!--android:clickable="true"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:text="分享运动经验"-->
+        <!--android:textColor="@color/plus_black"-->
+        <!--android:textSize="18sp"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+        <!--<View-->
+        <!--android:id="@+id/jiange02"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_above="@+id/dishui_tv"-->
+        <!--android:layout_alignRight="@+id/dishui_tv" />-->
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_fabuhuodong"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/write1"-->
+        <!--android:layout_above="@+id/jiange02"-->
+        <!--android:layout_alignRight="@+id/jiange01"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/guoshui_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/jiange02"-->
+        <!--android:layout_toLeftOf="@+id/iv_write"-->
+        <!--android:background="@drawable/border_radius"-->
+        <!--android:clickable="true"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:text="发布活动"-->
+        <!--android:textColor="@color/plus_black"-->
+        <!--android:textSize="18sp"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+    </RelativeLayout>
+
+</RelativeLayout>

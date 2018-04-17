@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fl"
+        android:layout_width="300dp"
+        android:layout_height="171dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+           />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/iv_isVideo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/isvideo"
+            android:visibility="gone"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/text_above_img"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fl"
+        android:layout_width="300dp"
+        android:background="@drawable/personal_adv_button_bg"
+        android:layout_height="51dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_choose_type"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+       />
+        <TextView
+            android:id="@+id/repay_adv"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/normal_confirm_bg"
+            android:layout_weight="1"
+            android:text="再次付款"
+            android:gravity="center"
+            android:textColor="@color/goods_red"
+            android:textSize="13sp"
+            android:layout_width="70dp"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

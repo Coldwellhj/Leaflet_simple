@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title">#fafafa</color>
+    <color name="shallowblack">#19000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#444444</color>
+    <color name="blue">#498CFF</color>
+    <color name="text1">#705330</color>
+    <color name="text2">#66705330</color>
+    <color name="bantoum">#50999999</color>
+    <color name="login_button">#ed1c24</color>
+    <color name="text_line">#E6E6E7</color>
+    <color name="linefill">#DEEFE4</color>
+    <color name="description">#686868</color>
+    <color name="color_ff4a57">#ff4a57</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="color_tv_cNowPrice">#ff6600</color>
+    <color name="color_tv_name">#373737</color>
+    <color name="color_tv_cFormerPrice">#999999</color>
+    <color name = "gray">#DBDBDB</color>
+    <color name = "goods_blue">#199ed8</color>
+    <color name = "goods_red">#e65c65</color>
+    <color name = "goods_orange">#ff6600</color>
+    <color name = "goods_text_orange">#ff9b05</color>
+    <color name = "gray_light">#f3f3f2</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_above_img">#99000000</color>
+    <color name="duck_black">#000000</color>
+
+    <color name="tab_panel_bg">#ffffff</color>
+    <color name="bar_divider">#D4D6D8</color>
+    <color name="tab_panel_divider">@color/bar_divider</color>
+
+    <color name="colorGreen">#3cda38</color>
+    <color name="colorRed">#ec0909</color>
+    <color name="mainRed">#e75356</color>
+    <color name="colorYellow">#ff8800</color>
+    <color name="orange_bg">#ffca90</color>
+    <color name="divider">#ffd2d2d2</color>
+
+    <color name="normalColor">#cccccc</color>
+    <color name="checkColor">#60cd89</color>
+    <color name="weixin_unwithdraw">#9fd799</color>
+    <color name="weixin_withdraw">#1aac19</color>
+    <color name="zhifubao_withdraw">#118eea</color>
+    <color name="zhifubao_unwithdraw">#7d96a8</color>
+
+
+    <color name="seller_publish_bg">#af999999</color>
+    <color name="seller_edit_bg">#f0f0f0</color>
+
+
+</resources>

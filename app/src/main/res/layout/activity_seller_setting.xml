@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="leaflet.miaoa.qmsh.leaflet.ui.personaluser.mine.SellerSettingActivity">
+    <RelativeLayout
+        android:background="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    <RelativeLayout
+        android:id="@+id/rl_seller_my_seeting_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp">
+        <ImageView
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/back"/>
+    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设 置"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="#fafafa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="新消息提醒"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/screen_notify"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/button_check"
+            android:button="@null"
+            android:checked="false"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="#fafafa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="在WIFI网络自动播放视频"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/auto_playVideo"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/button_check"
+            android:button="@null"
+            android:checked="false"
+            android:clickable="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="#fafafa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="在WIFI网络下下载最新版本"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/ck_autoDownload"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/button_check"
+            android:button="@null"
+            android:checked="false"
+            android:clickable="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_clearBuffer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="#fafafa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="清理缓存"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_Buffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:text="缓存大小"
+            android:textSize="15sp"
+            android:textColor="#999999"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="#fafafa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="检查更新"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:text="版本1.0.1"
+            android:textSize="15sp"
+            android:textColor="#999999"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_seller_my_seeting_call"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:background="#fafafa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="关于我们"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:src="@mipmap/turn_right" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/login_off"
+        android:layout_marginTop="39dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#e75356"
+        android:text="退出登录"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+</LinearLayout>

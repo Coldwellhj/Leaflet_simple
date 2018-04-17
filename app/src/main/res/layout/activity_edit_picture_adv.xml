@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seller_edit_bg"
+    tools:context="leaflet.miaoa.qmxh.leaflet_simple.ui.merchantHomePage.publish.EditPictureAdvActivity">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <RelativeLayout
+            android:id="@+id/iv_back"
+            android:layout_width="60dp"
+
+
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/back"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="编辑图片广告"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+        android:id="@+id/snpl_moment_add_photos"
+        style="@style/WrapWrap"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+        app:bga_snpl_deleteDrawableOverlapQuarter="false"
+        app:bga_snpl_editable="true"
+        app:bga_snpl_itemCornerRadius="0dp"
+        app:bga_snpl_itemSpanCount="3"
+        app:bga_snpl_itemWhiteSpacing="4dp"
+        app:bga_snpl_itemWidth="0dp"
+        app:bga_snpl_maxItemCount="12"
+        app:bga_snpl_otherWhiteSpacing="10dp"
+        app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_light"
+        app:bga_snpl_plusDrawable="@mipmap/bga_pp_ic_plus"
+        app:bga_snpl_plusEnable="true"
+        app:bga_snpl_sortable="true" />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_below="@+id/snpl_moment_add_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="最多可添加12张图片"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_tv_cFormerPrice"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/description"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详情描述"/>
+    <EditText
+        android:hint="      活动内容，活动描述，活动地点、日期、店铺等"
+
+        android:gravity="top|left"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:background="@drawable/seller_description_bg"
+        android:id="@+id/et_description"
+        android:layout_below="@+id/tv2"
+        android:layout_width="match_parent"
+
+        android:maxLength="80"
+        android:layout_height="100dp" />
+    <TextView
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_tv_cFormerPrice"
+        android:text="80字"/>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+
+        android:id="@+id/rl_next"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+
+        android:layout_height="48dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/goods_red"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="下一步"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeMenuView">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+    <!--<declare-styleable name="ArrowTextView">-->
+        <!--<attr name="radius" format="dimension" />-->
+        <!--<attr name="arrowWidth" format="dimension" />-->
+        <!--<attr name="arrowHeight" format="dimension" />-->
+        <!--<attr name="bg" format="color" />-->
+    <!--</declare-styleable>-->
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+    <style name="Widget_GifView"></style>
+    <declare-styleable name="CircularProgress">
+        <attr name="borderWidth1" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="LogisticsInformationView">
+        <attr name="width" format="dimension"/>
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+</resources>

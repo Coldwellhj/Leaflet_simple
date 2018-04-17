@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seller_edit_bg"
+    tools:context="leaflet.miaoa.qmxh.leaflet_simple.ui.merchantHomePage.publish.EditVideoActivity">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <RelativeLayout
+            android:id="@+id/iv_back"
+            android:layout_width="60dp"
+
+
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/back"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="编辑视频广告"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_addpicture"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_addpicture"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/addpicture"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_addvideo"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_addvideo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/addvideo"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_tv_cFormerPrice"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="12sp"
+            android:text="建议上传MP4/WMV格式，长度不超过1分钟"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:textColor="@color/description"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详情描述"/>
+            <EditText
+                android:hint="      活动内容，活动描述，活动地点、日期、店铺等"
+
+                android:gravity="top|left"
+                android:textSize="12sp"
+                android:layout_margin="10dp"
+                android:background="@drawable/seller_description_bg"
+                android:id="@+id/et_description"
+                android:layout_below="@+id/tv2"
+                android:layout_width="match_parent"
+                android:maxLength="80"
+                android:layout_height="100dp" />
+            <TextView
+                android:layout_below="@+id/tv2"
+                android:layout_marginTop="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_tv_cFormerPrice"
+                android:text="80字"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/rl_next"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pay_button_bg"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="下一步"/>
+    </RelativeLayout>
+</RelativeLayout>

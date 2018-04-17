@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_delete.png",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_delete.png"
+    },
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_arrow_down.png",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_arrow_down.png"
+    },
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_holder_light.png",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_holder_light.png"
+    },
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_cb_checked.png",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_cb_checked.png"
+    },
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_camera.png",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_camera.png"
+    },
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_cb_normal.png",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_cb_normal.png"
+    },
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_download.png",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_download.png"
+    },
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_holder_dark.png",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_holder_dark.png"
+    },
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_plus.png",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_plus.png"
+    }
+]

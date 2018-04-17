@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="224dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/take_photo"
+        android:layout_margin="13dp"
+        android:layout_width="198dp"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/button_conner"
+        android:text="拍照"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/take_photo"
+        android:id="@+id/choose_picture"
+        android:layout_marginLeft="13dp"
+        android:layout_width="198dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/button_conner"
+        android:textSize="20sp"
+        android:text="选择照片"/>
+</RelativeLayout>

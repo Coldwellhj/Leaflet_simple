@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.home.PersonalHomeAdvDetailActivity">
+
+        <RelativeLayout
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <RelativeLayout
+                android:id="@+id/iv_back"
+                android:layout_width="60dp"
+
+
+                android:layout_height="48dp">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/back"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:text="详情"/>
+        </RelativeLayout>
+    <com.dueeeke.videoplayer.player.IjkVideoView
+        android:id="@+id/video_player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="41dp">
+        <ImageView
+            android:id="@+id/iv_alive"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/alive"/>
+        <TextView
+            android:layout_toRightOf="@+id/iv_alive"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tv_playback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:id="@+id/tv_time"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+
+        android:layout_height="68dp">
+
+        <TextView
+            android:id="@+id/tv_redtime"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="75dp"
+            android:text="红包倒计时"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"/>
+        <com.dueeeke.videoplayer.GifView
+            android:layout_toRightOf="@+id/tv_redtime"
+            android:id="@+id/iv_redtime"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_marginLeft="34dp"
+            android:layout_height="25dp"
+
+            android:enabled="false" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="110dp"
+            android:id="@+id/tv_red_packet_time"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/adv_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"/>
+</LinearLayout>

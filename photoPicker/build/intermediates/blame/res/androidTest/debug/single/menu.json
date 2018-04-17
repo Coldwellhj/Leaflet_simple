@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bga_pp_menu_photo_preview.xml",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\menu\\bga_pp_menu_photo_preview.xml"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bga_pp_menu_photo_picker_preview.xml",
+        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\menu\\bga_pp_menu_photo_picker_preview.xml"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bga_pp_menu_photo_preview.xml",
+        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\menu\\bga_pp_menu_photo_preview.xml"
+    },
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bga_pp_menu_photo_picker_preview.xml",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\menu\\bga_pp_menu_photo_picker_preview.xml"
+    },
+    {
+        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bga_pp_menu_photo_picker.xml",
+        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\menu\\bga_pp_menu_photo_picker.xml"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bga_pp_menu_photo_picker.xml",
+        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\menu\\bga_pp_menu_photo_picker.xml"
+    }
+]

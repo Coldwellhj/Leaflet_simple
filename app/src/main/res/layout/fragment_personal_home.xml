@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f5f5f5">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/main_scrollView"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <!--<com.youth.banner.Banner-->
+                <!--android:id="@+id/banner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="91dp"/>-->
+
+
+            <!--<com.qmuiteam.qmui.widget.QMUITabSegment-->
+                <!--android:id="@+id/tabSegment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@drawable/tab_panel_bg"/>-->
+
+            <leaflet.miaoa.qmxh.leaflet_simple.ui.widget.CustomViewPager
+                android:id="@+id/vp_personal_home_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </leaflet.miaoa.qmxh.leaflet_simple.ui.widget.CustomViewPager>
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <com.qmuiteam.qmui.widget.QMUITabSegment
+
+        android:id="@+id/tabSegment_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/tab_panel_bg"
+       />
+
+</RelativeLayout>

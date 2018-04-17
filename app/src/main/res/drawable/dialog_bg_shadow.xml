@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 带阴影的弹出框背景 -->
+<layer-list xmlns:Android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape Android:shape="rectangle" >
+            <solid Android:color="#19000000" />
+
+            <corners Android:bottomLeftRadius="2dp"
+                Android:bottomRightRadius="2dp" />
+            <!-- 阴影部分向下偏移2dp -->
+            <padding
+                Android:bottom="2dp"
+                Android:left="0dp"
+                Android:right="0dp"
+                Android:top="0dp" />
+        </shape>
+    </item>
+    <item>
+        <shape Android:shape="rectangle" >
+
+            <!-- 填充颜色 -->
+            <solid Android:color="#ffffff" />
+
+            <!-- 线的宽度，颜色灰色 -->
+            <stroke
+                Android:width="0.5dp"
+                Android:color="#E2E2E2" />
+
+            <!-- 矩形的圆角半径 -->
+            <corners Android:bottomLeftRadius="2dp"
+                Android:bottomRightRadius="2dp" />
+        </shape>
+    </item>
+
+</layer-list>

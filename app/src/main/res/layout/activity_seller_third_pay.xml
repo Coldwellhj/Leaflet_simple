@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mall.payfor.ThirdPayActivity">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <RelativeLayout
+            android:id="@+id/iv_back"
+            android:layout_width="60dp"
+
+
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/back"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="收银台"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/goods_red"
+                android:text="支付："/>
+
+            <TextView
+                android:id="@+id/tv_payOrder"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="86dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/zhifubutton_bg"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="付款"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/pay_totalmoney"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv1"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorRed"
+                android:layout_toLeftOf="@+id/tv_payOrder"
+                android:text="¥0.00"/>
+            <TextView
+                android:id="@+id/tv_Balance_deduction"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_payOrder"
+                android:layout_marginRight="10dp"
+                android:text=""/>
+        </RelativeLayout>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_above="@+id/rl_button"
+    android:layout_below="@+id/head"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bar_divider"
+    android:orientation="vertical">
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+ />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_balance"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/iv_balance"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+          android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/weixin" />
+
+        <TextView
+            android:layout_toRightOf="@+id/iv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="余额支付"
+            android:textColor="@color/duck_black"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/iv_bl_checked"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/checked"
+            />
+    </RelativeLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_weixin"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/iv_weixin"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/weixin" />
+
+        <TextView
+            android:layout_toRightOf="@+id/iv_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="微信支付"
+            android:textColor="@color/duck_black"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/iv_wx_checked"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/unchecked"
+            />
+    </RelativeLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_zhifubao"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/iv_zhifubao"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/zhifubao"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/iv_zhifubao"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/duck_black"
+            android:text="支付宝支付"/>
+        <ImageView
+            android:id="@+id/iv_zhifubao_unchecked"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/unchecked"
+            />
+    </RelativeLayout>
+</LinearLayout>
+
+</RelativeLayout>

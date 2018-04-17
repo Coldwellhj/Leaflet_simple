@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+//        signingConfigs {
+//            config {
+//                keyAlias 'miaoa'
+//                keyPassword '123456'
+//                storeFile file('F:/AndroidDemo/Leaflet_simple/app/Leaflet.jks')
+//                storePassword '123456'
+//            }
+//
+//        }
+        signingConfigs {
+        config {
+            keyAlias 'keystore'
+            keyPassword '986793021'
+            storeFile file('F:/AndroidDemo/Leaflet_simple/app/keystore.jks')
+            storePassword '986793021'
+        }
+
+    }
+        applicationId "leaflet.miaoa.qmxh.leaflet_simple"
+        minSdkVersion 18
+        targetSdkVersion 26
+        useLibrary 'org.apache.http.legacy'
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.qmuiteam:qmui:1.0.6'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile files('libs/Volley.jar')
+    compile files('libs/httpmime-4.2.5.jar')
+    compile files('libs/json.jar')
+    compile files('libs/alipaySdk-20170922.jar')
+    compile project(':library')
+    compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.0'
+    compile 'com.shizhefei:ViewPagerIndicator:1.1.3'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:4.5.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile project(':jcvideoplayer-lib')
+    compile project(':banner')
+    compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
+    // -------------------- 以下4个库是必须依赖的 ----------------------------
+    implementation 'cn.bingoogolapple:bga-photopicker:1.2.8@aar'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:support-v4:27.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'cn.bingoogolapple:bga-baseadapter:1.2.7@aar'
+    implementation 'pub.devrel:easypermissions:1.0.1'
+    implementation files('libs/jcore-android-1.1.9.jar')
+    compile 'com.miomin:shswiperefreshlayout:1.3.0'
+    compile project(':IjkVideo')
+    implementation project(':silicompressor')
+    compile files('libs/happy-dns-0.2.3.2.jar')
+    compile files('libs/qiniu-android-sdk-7.1.2.jar')
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/okhttp-2.7.0.jar')
+    implementation files('libs/libammsdk.jar')
+  
+}

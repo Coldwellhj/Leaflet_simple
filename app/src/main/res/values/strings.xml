@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">小传单</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="tabSegment_item_1_title">收到的</string>
+    <string name="tabSegment_item_2_title">看过的</string>
+    <string name="tabSegment_item_3_title">优选商品</string>
+    <string name="tabSegment_item_4_title">淘宝特惠</string>
+    <string name="tabSegment_item_5_title">展示中</string>
+    <string name="tabSegment_item_6_title">已结束</string>
+    <string name="tabSegment_item_7_title">其他</string>
+</resources>

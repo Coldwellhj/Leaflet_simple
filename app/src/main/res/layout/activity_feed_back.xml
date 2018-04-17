@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mine.FeedBackActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f5f5f5">
+
+
+        <RelativeLayout
+            android:background="#fafafa"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+            <ImageView
+                android:id="@+id/iv_seller_my_feed_back_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="建议/吐槽"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="遇到问题？"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="12dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/seller_my_feedback_conner">
+
+            <EditText
+                android:id="@+id/problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_margin="12dp"
+                android:background="@null"
+                android:hint="请在此输入您在使用中遇到的问题，请尽量描述清楚，我们会尽快解决问题，竭诚感谢您对我们产品的支持"
+                android:textColorHint="#999999"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:maxLength="500"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建议/吐槽"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="12dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/seller_my_feedback_conner">
+
+            <EditText
+                android:id="@+id/advice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="请在此输入您宝贵的意见，或者您觉得我们需要优化改进的地方，我们会尽快在新版本中实现您的需求，竭诚感谢您对我们产品的支持！"
+                android:textColorHint="#999999"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:maxLength="500"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_conner"
+            android:text="提 交"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </LinearLayout>
+</ScrollView>
