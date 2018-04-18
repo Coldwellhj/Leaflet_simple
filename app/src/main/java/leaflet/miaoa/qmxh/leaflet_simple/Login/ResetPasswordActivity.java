@@ -21,8 +21,12 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.io.UnsupportedEncodingException;
+
 import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.base.BaseActivity;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.AesCBC;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.Base64;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.SMS_127135070;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.getCode;
@@ -44,6 +48,7 @@ public class ResetPasswordActivity extends BaseActivity implements View.OnClickL
     private TextView tv_resetpassword_getnum;
     private CountDownTimer countDownTimer;
     private String strCode;
+    private String psd_jiami;
     @Override
     protected void setContentView() {
         setContentView(R.layout.activity_reset_password);
@@ -194,6 +199,13 @@ public class ResetPasswordActivity extends BaseActivity implements View.OnClickL
 
                 break;
             case R.id.tv_confirm:
+                String password= et_password.getText().toString().trim() ;
+                try {
+                    byte[ ] encrypted = AesCBC.AES_CBC_Encrypt(password.getBytes("UTF-8"), AesCBC.key.getBytes("UTF-8"), AesCBC.iv.getBytes("UTF-8"));
+                    psd_jiami = Base64.encode(encrypted);
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
                 if(et_num.getText().toString().trim().length()!=11){
                     Toast.makeText(ResetPasswordActivity.this, "请输入正确的手机号", Toast.LENGTH_SHORT).show();
 
@@ -209,7 +221,7 @@ public class ResetPasswordActivity extends BaseActivity implements View.OnClickL
                 }else {
                     RequestQueue mQueue = Volley.newRequestQueue(ResetPasswordActivity.this);
                     StringRequest stringRequest = new StringRequest(
-                            resetPassword + "?uNum=" + et_num.getText().toString().trim()+"&uPassword="+et_password.getText().toString().trim()  ,
+                            resetPassword + "?uNum=" + et_num.getText().toString().trim()+"&uPassword="+psd_jiami ,
 //
                             new Response.Listener<String>() {
                                 @SuppressLint("WrongConstant")

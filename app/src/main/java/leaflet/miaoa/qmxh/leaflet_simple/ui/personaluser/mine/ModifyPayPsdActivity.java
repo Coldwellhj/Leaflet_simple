@@ -20,8 +20,12 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.io.UnsupportedEncodingException;
+
 import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.base.BaseActivity;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.AesCBC;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.Base64;
 import leaflet.miaoa.qmxh.leaflet_simple.utils.ToastUtils;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.Login.WelcomeActivity.Usertel;
@@ -46,6 +50,7 @@ public class ModifyPayPsdActivity extends BaseActivity implements View.OnClickLi
     private String strCode;
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
+    private String psd_jiami;
     @Override
     protected void setContentView() {
 
@@ -146,9 +151,15 @@ public class ModifyPayPsdActivity extends BaseActivity implements View.OnClickLi
 
 
     private void modifyUserPayword (final String newPsd){
+        try {
+            byte[ ] encrypted = AesCBC.AES_CBC_Encrypt(newPsd.getBytes("UTF-8"), AesCBC.key.getBytes("UTF-8"), AesCBC.iv.getBytes("UTF-8"));
+            psd_jiami = Base64.encode(encrypted);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         RequestQueue mQueue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(
-                modifyUserPayword + "?uNum=" + Usertel+"&payword="+newPsd  ,
+                modifyUserPayword + "?uNum=" + Usertel+"&payword="+psd_jiami  ,
 //
                 new Response.Listener<String>() {
                     @SuppressLint("WrongConstant")

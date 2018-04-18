@@ -36,7 +36,7 @@ public class UploadImage {
      * @param imagePath
      */
     public void uploadImage(String imagePath) {
-        NetworkTask networkTask= new NetworkTask();
+        final NetworkTask networkTask= new NetworkTask();
         networkTask.execute(imagePath);
         new Thread(){
             public void run(){

@@ -1,40 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ja\\values-ja.xml",
-            "map": [
-                {
-                    "source": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\bundles\\debug\\res\\values-ja\\values-ja.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,120,188",
-                        "endColumns": "64,67,66",
-                        "endOffsets": "115,183,250"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "E:\\Leaflet_simple\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ja\\values-ja.xml",
             "map": [
                 {
                     "source": "E:\\Leaflet_simple\\library\\build\\intermediates\\bundles\\debug\\res\\values-ja\\values-ja.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,120,188",
-                        "endColumns": "64,67,66",
-                        "endOffsets": "115,183,250"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ja\\values-ja.xml",
-            "map": [
-                {
-                    "source": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\bundles\\debug\\res\\values-ja\\values-ja.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

@@ -99,6 +99,8 @@
         <activity android:name=".Login.LoginActivity" />
         <!-- 重置密码页面 -->
         <activity android:name=".Login.ResetPasswordActivity" />
+
+        <activity android:name=".Login.WB_ProtocolActivity" />
         <!-- &lt;!&ndash; 个人用户主页面 &ndash;&gt; -->
         <activity android:name=".ui.personaluser.PersonalUserHomePageActivity" android:launchMode="singleTask" />
         <activity android:name=".ui.personaluser.mine.Personal_mine_info_Activity" />

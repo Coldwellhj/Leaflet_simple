@@ -17,6 +17,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 import com.qmuiteam.qmui.util.QMUIResHelper;
 import com.qmuiteam.qmui.widget.QMUITabSegment;
+import com.qmuiteam.qmui.widget.dialog.QMUITipDialog;
 import com.youth.banner.Banner;
 
 import java.util.ArrayList;
@@ -319,7 +320,7 @@ public class PersonalHomeFragment extends BaseFragment implements View.OnClickLi
                     imgs.clear();
                     personalHomeReceivedFragment.page=1;
 
-                    personalHomeReceivedFragment.getQueryPagedAdverUlike(personalHomeReceivedFragment.page);//下拉刷新第一页数据
+                    personalHomeReceivedFragment.getQueryBeanAdverUlikeByNum(personalHomeReceivedFragment.page);//下拉刷新第一页数据
                     personalHomeReceivedFragment.httpAvd();//
                 }else if(currentPage==1){
                     personalHomeReceivedFragment2.advList.clear();
@@ -363,6 +364,7 @@ public class PersonalHomeFragment extends BaseFragment implements View.OnClickLi
                 if(currentPage==0){
                     if(personalHomeReceivedFragment.page<personalHomeReceivedFragment.totalPage){
                         personalHomeReceivedFragment.page++;
+
                         personalHomeReceivedFragment.getQueryPagedAdverUlike(personalHomeReceivedFragment.page);//上拉加载第一页数据
 
                     }else {

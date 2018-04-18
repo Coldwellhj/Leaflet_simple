@@ -17,7 +17,7 @@ android {
         config {
             keyAlias 'keystore'
             keyPassword '986793021'
-            storeFile file('F:/AndroidDemo/Leaflet_simple/app/keystore.jks')
+            storeFile file('E:/Leaflet_simple/app/keystore.jks')
             storePassword '986793021'
         }
 
@@ -54,7 +54,6 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -88,8 +87,12 @@ dependencies {
     implementation project(':silicompressor')
     compile files('libs/happy-dns-0.2.3.2.jar')
     compile files('libs/qiniu-android-sdk-7.1.2.jar')
-    compile files('libs/okio-1.6.0.jar')
     compile files('libs/okhttp-2.7.0.jar')
     implementation files('libs/libammsdk.jar')
-  
+    compile 'com.android.support:multidex:1.0.1'
+
+    implementation files('libs/jpush-android-3.1.1.jar')
+    implementation files('libs/gson-2.3.1.jar')
+    implementation files('libs/BASE64.jar')
+    implementation files('libs/AMap_Location_V3.7.0_20171218.jar')
 }

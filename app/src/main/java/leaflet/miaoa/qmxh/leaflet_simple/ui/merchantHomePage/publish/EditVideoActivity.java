@@ -459,7 +459,7 @@ public class EditVideoActivity extends BaseOtherActivity implements View.OnClick
 
                         // 方法二 ThumbnailUtils 利用createVideoThumbnail 通过路径得到缩略图，保持为视频的默认比例
                         // 第一个参数为 视频/缩略图的位置，第二个依旧是分辨率相关的kind
-                        Bitmap bitmap2 = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.MICRO_KIND);
+                        final Bitmap bitmap2 = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.MICRO_KIND);
                         // 如果追求更好的话可以利用 ThumbnailUtils.extractThumbnail 把缩略图转化为的制定大小
 //                        ThumbnailUtils.extractThumbnail(bitmap, width,height ,ThumbnailUtils.OPTIONS_RECYCLE_INPUT);
 //                        setText(tv_VideoPath, R.string.path, videoPath);
@@ -470,7 +470,7 @@ public class EditVideoActivity extends BaseOtherActivity implements View.OnClick
 
                             final String destPath = outputDir + File.separator + "VID_" + new SimpleDateFormat("yyyyMMdd_HHmmss", getLocale()).format(new Date()) + ".mp4";
 
-                            int finalDuration = duration;
+                            final int finalDuration = duration;
                             VideoCompress.compressVideoLow(videoPath, destPath, new VideoCompress.CompressListener() {
                                 @Override
                                 public void onStart() {

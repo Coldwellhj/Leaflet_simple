@@ -1,15 +1,7 @@
 [
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_switch_track.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_tint_switch_track.xml"
-    },
-    {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_spinner.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_tint_spinner.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_btn_colored_text_material.xml",
@@ -18,10 +10,6 @@
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_edittext.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_switch_track.xml",
@@ -40,32 +28,8 @@
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_btn_checkable.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_tint_btn_checkable.xml"
-    },
-    {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_btn_checkable.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_color_highlight_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_btn_colored_text_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_btn_colored_text_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_spinner.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_tint_spinner.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_default.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_tint_default.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_seek_thumb.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_default.xml",

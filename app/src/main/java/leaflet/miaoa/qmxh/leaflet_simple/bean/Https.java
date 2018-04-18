@@ -76,6 +76,7 @@ public class Https {
 
 
     public static String getQueryPagedAdverUlike=basehttp+"MiaoA/getQueryPagedAdverUlike.action";//获所有广告
+    public static String getQueryBeanAdverUlikeByNum=basehttp+"MiaoA/getQueryBeanAdverUlikeByNum.action";//获特定广告（最先获取）
     public static String getAdverById=basehttp+"MiaoA/getAdverById.action";//获广告详情
     public static String getAdverResidueById=basehttp+"MiaoA/getAdverResidueById.action";//获广告剩余红包数
     public static String updateOfReduceReplacee=basehttp+"MiaoA/updateOfReduceReplacee.action";//看完广告后领取红包,修改金额,修改广告状态

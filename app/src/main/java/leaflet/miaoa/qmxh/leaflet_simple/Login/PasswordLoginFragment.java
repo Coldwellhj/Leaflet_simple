@@ -25,10 +25,14 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.qmuiteam.qmui.widget.dialog.QMUITipDialog;
 
+import java.io.UnsupportedEncodingException;
+
 import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.base.BaseFragment;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.merchantHomePage.SellerHomePageActivity;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.PersonalUserHomePageActivity;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.AesCBC;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.Base64;
 import leaflet.miaoa.qmxh.leaflet_simple.utils.Common;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.Login.WelcomeActivity.Usertel;
@@ -54,6 +58,7 @@ public class PasswordLoginFragment extends BaseFragment implements View.OnClickL
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
     private QMUITipDialog LondingDialog;
+    private String psdString;
     @Override
     protected View setContentView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_password_login,null);
@@ -138,7 +143,15 @@ public class PasswordLoginFragment extends BaseFragment implements View.OnClickL
                 break;
             case R.id.tv_password_login:
                     final String telString = et_num.getText().toString().trim();
-                    String psdString = et_psd.getText().toString().trim();
+                    String psd = et_psd.getText().toString().trim();
+
+                try {
+                    byte[ ] encrypted = AesCBC.AES_CBC_Encrypt(psd.getBytes("UTF-8"), AesCBC.key.getBytes("UTF-8"), AesCBC.iv.getBytes("UTF-8"));
+                    psdString = Base64.encode(encrypted);
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+
                 final boolean CheckBoxLogin = checkboxButton.isChecked();
                 final boolean cbProtocol = checkBoxProtocol.isChecked();
                 //记住密码

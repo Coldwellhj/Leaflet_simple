@@ -420,7 +420,7 @@ public class ConfirmOrderActivity extends BaseOtherActivity implements OnPasswor
         mQueue.add(stringRequest);
     }
     //获取支付密码
-    private void checkUserPayWord(Boolean flag){
+    private void checkUserPayWord(final Boolean flag){
         RequestQueue mQueue = Volley.newRequestQueue(this);
         final StringRequest stringRequest = new StringRequest(
                 checkUserPayWord+"?uNum=" + Usertel,

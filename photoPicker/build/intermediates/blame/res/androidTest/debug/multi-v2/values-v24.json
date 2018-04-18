@@ -29,36 +29,6 @@
                     }
                 }
             ]
-        },
-        {
-            "outputFile": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v24\\values-v24.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v24\\values-v24.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                }
-            ]
         }
     ]
 }

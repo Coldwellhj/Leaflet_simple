@@ -1,15 +1,19 @@
 [
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_selector_item_folder.xml",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_selector_item_folder.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_selector_btn_confirm.xml",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_selector_btn_confirm.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\cc0a5ab25ddb109ada5a9d8355763818\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_selected.png",
+        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_selected.png"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_dark.xml",
@@ -20,182 +24,6 @@
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\cc0a5ab25ddb109ada5a9d8355763818\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_vector_test.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\tooltip_frame_light.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\tooltip_frame_light.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_selector_item_folder.xml",
-        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_selector_item_folder.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_shape_photo_folder_pw_bg.xml",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_shape_photo_folder_pw_bg.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_selected.png",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_selected.png"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ratingbar_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ic_back.png",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\ic_back.png"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\cc0a5ab25ddb109ada5a9d8355763818\\res\\drawable\\notification_bg.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_selector_btn_confirm.xml",
-        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_selector_btn_confirm.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ic_back.png",
-        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\ic_back.png"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ratingbar_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_search_api_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\cc0a5ab25ddb109ada5a9d8355763818\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\cc0a5ab25ddb109ada5a9d8355763818\\res\\drawable\\notification_bg_low.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
-    },
-    {
-        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_selected.png",
-        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_selected.png"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_edit_text_material.xml"
     },
@@ -204,24 +32,12 @@
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\tooltip_frame_light.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\tooltip_frame_light.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_vector_test.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
@@ -230,6 +46,10 @@
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_selector_item_folder.xml",
+        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_selector_item_folder.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_track_material.xml",
@@ -244,68 +64,60 @@
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_tab_indicator_material.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_rotate_progress_bar.xml",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_rotate_progress_bar.xml"
-    },
-    {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_unselected.png",
         "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_unselected.png"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_clear_material.xml"
-    },
-    {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_shape_photo_folder_pw_bg.xml",
         "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_shape_photo_folder_pw_bg.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\cc0a5ab25ddb109ada5a9d8355763818\\res\\drawable\\notification_bg.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\tooltip_frame_dark.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\tooltip_frame_dark.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\cc0a5ab25ddb109ada5a9d8355763818\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_shape_dialog_bg.xml",
@@ -316,28 +128,28 @@
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_tile_bg.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\cc0a5ab25ddb109ada5a9d8355763818\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\tooltip_frame_light.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\tooltip_frame_light.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\action_btn.xml",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\action_btn.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\cc0a5ab25ddb109ada5a9d8355763818\\res\\drawable\\notification_icon_background.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_text_cursor_material.xml",
@@ -348,47 +160,39 @@
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_unselected.png",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_unselected.png"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_shape_dialog_bg.xml",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_shape_dialog_bg.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_selector_btn_confirm.xml",
+        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_selector_btn_confirm.xml"
     },
     {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\action_btn.xml",
         "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\action_btn.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\tooltip_frame_dark.xml",
-        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\tooltip_frame_dark.xml"
-    },
-    {
         "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bga_pp_rotate_progress_bar.xml",
         "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bga_pp_rotate_progress_bar.xml"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ic_back.png",
+        "source": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\ic_back.png"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "E:\\Leaflet_simple\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\gaofeng\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a6e5bd91919fd2105d171aba444dddca\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     }
 ]

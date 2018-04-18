@@ -12,10 +12,14 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.UnsupportedEncodingException;
+
 import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.Interface.OnPasswordInputFinish;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.Interface.OnPasswordPayClickListener;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mine.ModifyPayPsdActivity;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.AesCBC;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.Base64;
 
 
 /**
@@ -27,7 +31,7 @@ public class PopEnterPassword extends PopupWindow {
 
     private PasswordView pwdView;
     private PayEditText payEditText;
-
+    private String psd_jiami;
 
     private View mMenuView;
     private Keyboard keyboard;
@@ -43,7 +47,7 @@ public class PopEnterPassword extends PopupWindow {
             "7", "8", "9",
             "", "0", "X"
     };
-    public PopEnterPassword(OnPasswordPayClickListener passwordPayClickListener,final Activity context, String psd,Boolean flag) {
+    public PopEnterPassword(final OnPasswordPayClickListener passwordPayClickListener, final Activity context, final String psd, final Boolean flag) {
 
         super(context);
 
@@ -82,7 +86,13 @@ public class PopEnterPassword extends PopupWindow {
         payEditText.setOnInputFinishedListener(new PayEditText.OnInputFinishedListener() {
             @Override
             public void onInputFinished(String password) {
-                if(password.equals(psd)){
+                try {
+                    byte[ ] encrypted = AesCBC.AES_CBC_Encrypt(password.getBytes("UTF-8"), AesCBC.key.getBytes("UTF-8"), AesCBC.iv.getBytes("UTF-8"));
+                    psd_jiami = Base64.encode(encrypted);
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+                if(psd_jiami.equals(psd)){
                     dismiss();
                     Toast.makeText(mContext, "支付成功" , Toast.LENGTH_SHORT).show();
                         passwordPayClickListener.psdSuccess(flag);

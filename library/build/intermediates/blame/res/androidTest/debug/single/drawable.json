@@ -4,15 +4,7 @@
         "source": "E:\\Leaflet_simple\\library\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
     },
     {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
-    },
-    {
         "merged": "E:\\Leaflet_simple\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
         "source": "E:\\Leaflet_simple\\library\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
-    },
-    {
-        "merged": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
-        "source": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
     }
 ]

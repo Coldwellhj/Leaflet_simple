@@ -22,8 +22,12 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.io.UnsupportedEncodingException;
+
 import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.base.BaseActivity;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.AesCBC;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.Base64;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.SMS_127135071;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.getCode;
@@ -47,7 +51,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
     private String strCode;
     private String telString;
-
+    private String psd_jiami;
     @Override
     protected void setContentView() {
         setContentView(R.layout.activity_register);
@@ -250,9 +254,16 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         mQueue.add(stringRequest);
     }
     private void register(){
+        String password= et_password.getText().toString().trim();
+        try {
+            byte[ ] encrypted = AesCBC.AES_CBC_Encrypt(password.getBytes("UTF-8"), AesCBC.key.getBytes("UTF-8"), AesCBC.iv.getBytes("UTF-8"));
+            psd_jiami = Base64.encode(encrypted);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         RequestQueue mQueue = Volley.newRequestQueue(RegisterActivity.this);
         StringRequest stringRequest = new StringRequest(
-                register + "?uNum=" + et_register_phonenumber.getText().toString().trim()+"&uPassword="+et_password.getText().toString().trim()  ,
+                register + "?uNum=" + et_register_phonenumber.getText().toString().trim()+"&uPassword="+psd_jiami  ,
 //
                 new Response.Listener<String>() {
                     @SuppressLint("WrongConstant")

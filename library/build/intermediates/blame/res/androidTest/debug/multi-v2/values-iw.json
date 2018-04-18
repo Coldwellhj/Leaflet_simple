@@ -16,40 +16,10 @@
             ]
         },
         {
-            "outputFile": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-iw\\values-iw.xml",
-            "map": [
-                {
-                    "source": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\bundles\\debug\\res\\values-iw\\values-iw.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,123,190",
-                        "endColumns": "67,66,70",
-                        "endOffsets": "118,185,256"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "E:\\Leaflet_simple\\library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-iw\\values-iw.xml",
             "map": [
                 {
                     "source": "E:\\Leaflet_simple\\library\\build\\intermediates\\bundles\\debug\\res\\values-iw\\values-iw.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,123,190",
-                        "endColumns": "67,66,70",
-                        "endOffsets": "118,185,256"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-iw\\values-iw.xml",
-            "map": [
-                {
-                    "source": "F:\\AndroidDemo\\Leaflet_simple\\library\\build\\intermediates\\bundles\\debug\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

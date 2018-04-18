@@ -260,7 +260,7 @@ public class MessageLoginFragment extends BaseFragment implements View.OnClickLi
 
         }
     }
-    private void isExist(String tel){
+    private void isExist(final String tel){
         RequestQueue mQueue = Volley.newRequestQueue(getActivity());
         StringRequest stringRequest = new StringRequest(
                 isExist + "?uNum=" + tel ,

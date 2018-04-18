@@ -38,6 +38,7 @@ import leaflet.miaoa.qmxh.leaflet_simple.utils.ToastUtils;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.Login.WelcomeActivity.Usertel;
 import static leaflet.miaoa.qmxh.leaflet_simple.Login.WelcomeActivity.start;
+import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.getQueryBeanAdverUlikeByNum;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.getQueryPagedAdverUlike;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.slideShow;
 
@@ -60,6 +61,7 @@ public class PersonalHomeReceivedFragment extends Fragment implements OnBannerLi
     private String ifRead="";
     private Long aResidue=0L;
     public static int page =1;
+
     public  QMUITipDialog LondingDialog;
 
     @Override
@@ -70,6 +72,7 @@ public class PersonalHomeReceivedFragment extends Fragment implements OnBannerLi
         advList.clear();
         head_advList.clear();
         imgs.clear();
+
         LondingDialog = new QMUITipDialog.Builder(getActivity())
                 .setIconType(QMUITipDialog.Builder.ICON_TYPE_LOADING)
                 .setTipWord("加载中···")
@@ -77,7 +80,7 @@ public class PersonalHomeReceivedFragment extends Fragment implements OnBannerLi
 
         LondingDialog.show();
         httpAvd();
-        getQueryPagedAdverUlike(1);
+        getQueryBeanAdverUlikeByNum(1);
         initView(view);
         return view;
     }
@@ -164,7 +167,7 @@ public class PersonalHomeReceivedFragment extends Fragment implements OnBannerLi
                          if("0.0,0.0".equals(start)){
 
 
-                             ToastUtils.showShort(getActivity(),"请手动开启定位权限，获取广告领红包");
+                             ToastUtils.showShort(getActivity(),"获取定位失败");
                          }else {
                              if(Common.isNOT_Null(response)){
                                  JSONObject jsonObject1 = new JSONObject(response);
@@ -211,14 +214,18 @@ public class PersonalHomeReceivedFragment extends Fragment implements OnBannerLi
 
 
                         } catch (Exception e) {
-                            LondingDialog.dismiss();
+                            if(LondingDialog!=null){
+                                LondingDialog.dismiss();
+                            }
                             Toast.makeText(mContext, "数据异常", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                LondingDialog.dismiss();
+                if(LondingDialog!=null){
+                    LondingDialog.dismiss();
+                }
                 Toast.makeText(mContext, "请检查网络设置", Toast.LENGTH_SHORT).show();
 
             }
@@ -228,7 +235,82 @@ public class PersonalHomeReceivedFragment extends Fragment implements OnBannerLi
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         mQueue.add(stringRequest);
     }
+    public void getQueryBeanAdverUlikeByNum(final int page){
+        RequestQueue mQueue = Volley.newRequestQueue(mContext);
+        final StringRequest stringRequest = new StringRequest(
+                getQueryBeanAdverUlikeByNum+"?uNum="+Usertel  ,
+                new Response.Listener<String>() {
 
+                    @Override
+                    public void onResponse(String response) {
+
+                        try {
+
+
+
+                                if(Common.isNOT_Null(response)){
+
+                                    JSONArray jsonArray =new JSONArray(response);
+                                    ListActivityBean listActivityBean=new ListActivityBean();
+                                    //          int length = jsonArray.length();
+                                    List<ListActivityBean.Adv> advList_temp = new ArrayList<ListActivityBean.Adv>();
+                                    for (int i = 0; i < jsonArray.length(); i++) {
+                                        JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                        String aId=jsonObject.getString("aId");
+                                        String aCover=jsonObject.getString("aCover");
+                                        String aContent=jsonObject.getString("aContent");
+                                        String aType=jsonObject.getString("aType");
+                                        String watchCount=jsonObject.getString("watchCount");
+                                        aResidue=jsonObject.getLong("aResidue");
+                                        ifRead=jsonObject.getString("ifRead");
+                                        Long uploadBegin=jsonObject.getLong("uploadBegin");
+                                        Long uploadEnd=jsonObject.getLong("uploadEnd");
+                                        ListActivityBean.Adv adv=listActivityBean.new Adv();
+                                        adv.setaId(aId);
+                                        adv.setaCover(aCover);
+                                        adv.setaContent(aContent);
+                                        adv.setWatchCount(watchCount);
+                                        adv.setaType(aType);
+                                        adv.setUploadBegin(uploadBegin);
+                                        adv.setUploadEnd(uploadEnd);
+                                        if(aResidue>0&&"false".equals(ifRead)){
+                                            adv.setRedpacket(true);
+                                        }else {
+                                            adv.setRedpacket(false);
+                                        }
+                                        advList_temp.add(i,adv);
+
+                                    }
+                                    advList.addAll(advList_temp);
+                                    homeAdvReceivedAdapter.notifyDataSetChanged();
+
+                                    getQueryPagedAdverUlike(page);
+                            }
+
+
+
+                        } catch (Exception e) {
+                            if(LondingDialog!=null){
+                                LondingDialog.dismiss();
+                            }
+                            Toast.makeText(mContext, "数据异常", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                if(LondingDialog!=null){
+                    LondingDialog.dismiss();
+                }
+                Toast.makeText(mContext, "请检查网络设置", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(4000,// 默认超时时间，应设置一个稍微大点儿的，例如本处的500000
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        mQueue.add(stringRequest);
+    }
     public  void httpAvd(){
         RequestQueue mQueue = Volley.newRequestQueue(mContext);
         final StringRequest stringRequest = new StringRequest(
