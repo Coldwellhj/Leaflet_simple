@@ -129,7 +129,7 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".ui.personaluser.home.PersonalHomeAdvPictureDetailActivity" />
         <activity android:name=".ui.personaluser.mall.PersonalHomegetGoodsByIdActivity" />
-        <activity android:name=".ui.personaluser.mall.payfor.ConfirmOrderActivity" />
+        <activity android:name=".ui.personaluser.mall.payfor.ConfirmOrderActivity" android:launchMode="singleTask" />
         <activity android:name=".ui.personaluser.mall.payfor.ChooseAddressActivity" />
         <activity android:name=".ui.personaluser.mall.payfor.ManagerAddressActivity" />
         <activity
@@ -178,8 +178,10 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".ui.merchantHomePage.publish.ThirdPaySellerActivity" />
 
-
-
+        <!-- 微信支付 -->
+        <activity android:name="leaflet.miaoa.qmxh.leaflet_simple.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
 
 
 

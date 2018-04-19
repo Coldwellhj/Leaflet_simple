@@ -30,14 +30,18 @@ import org.json.JSONObject;
 
 import java.math.BigDecimal;
 
+import cn.jpush.android.api.JPushInterface;
+import leaflet.miaoa.qmxh.leaflet_simple.Login.LoginActivity;
 import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.base.BaseOtherActivity;
 import leaflet.miaoa.qmxh.leaflet_simple.bean.ListActivityBean;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.Interface.OnPasswordPayClickListener;
+import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.PersonalUserHomePageActivity;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.widget.AmountView;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.widget.PopEnterPassword;
 import leaflet.miaoa.qmxh.leaflet_simple.utils.Common;
 import leaflet.miaoa.qmxh.leaflet_simple.utils.ToastUtils;
+import leaflet.miaoa.qmxh.leaflet_simple.wxapi.WXPayEntryActivity;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.Login.WelcomeActivity.Usertel;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.buyCoinGoods;
@@ -134,6 +138,22 @@ public class ConfirmOrderActivity extends BaseOtherActivity implements OnPasswor
     };
 
     @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        if (intent != null) {//判断其他Activity启动本Activity时传递来的intent是否为空
+            //获取intent中对应Tag的布尔值
+            boolean isFinish = intent.getBooleanExtra("finish", false);
+            //如果为真则退出本Activity
+            if (isFinish) {
+                this.finish();
+
+                Intent intent1=new Intent(ConfirmOrderActivity.this,BuyAfterActivity.class);
+                startActivity(intent1);
+            }
+        }
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -197,6 +217,12 @@ public class ConfirmOrderActivity extends BaseOtherActivity implements OnPasswor
                 if(Common.isNOT_Null(addressId)){
                     if(isuse_balance){
                         if(totalprice.compareTo(mybalance) == 1){
+                            LondingDialog2= new QMUITipDialog.Builder(this)
+                                    .setIconType(QMUITipDialog.Builder.ICON_TYPE_LOADING)
+                                    .setTipWord("提交中···")
+                                    .create();
+
+                            LondingDialog2.show();
                             checkUserPayWord(false);
 
                         }else {

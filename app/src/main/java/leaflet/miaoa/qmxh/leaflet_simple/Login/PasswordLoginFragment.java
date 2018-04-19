@@ -6,7 +6,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.InputType;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +51,7 @@ public class PasswordLoginFragment extends BaseFragment implements View.OnClickL
     private EditText et_num,et_psd;
     private CheckBox checkboxButton;
     private CheckBox checkBoxProtocol;
+    private CheckBox cbDisplayPassword;
 
 //    private ImageView ivPerson,ivSeller;
     private int jumpFlag = 1;//1是用户，0是商家
@@ -83,6 +86,7 @@ public class PasswordLoginFragment extends BaseFragment implements View.OnClickL
 //        ivSeller = (ImageView) view.findViewById(R.id.iv_password_login_seller);
         checkboxButton = (CheckBox) view.findViewById(R.id.checkBoxLogin);
         checkBoxProtocol = (CheckBox) view.findViewById(R.id.checkBoxProtocol);
+        cbDisplayPassword = (CheckBox) view.findViewById(R.id.cbDisplayPassword);
         checkBoxProtocol.setChecked(true);
         if(Common.isNOT_Null(tel)==true){
             et_num.setText(tel);
@@ -114,7 +118,19 @@ public class PasswordLoginFragment extends BaseFragment implements View.OnClickL
                 startActivity(intent);
             }
         });
-
+        cbDisplayPassword.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                Log.d(TAG, "onCheckedChanged: "+isChecked);
+                if(isChecked){
+//选择状态 显示明文--设置为可见的密码
+                    et_psd.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                }else {
+//默认状态显示密码--设置文本 要一起写才能起作用 InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD
+                    et_psd.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
+            }
+        });
 
     }
 

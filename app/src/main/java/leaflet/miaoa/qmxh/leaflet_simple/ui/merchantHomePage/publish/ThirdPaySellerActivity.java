@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -35,9 +36,13 @@ import java.util.Map;
 import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.base.BaseOtherActivity;
 import leaflet.miaoa.qmxh.leaflet_simple.bean.Constants;
+import leaflet.miaoa.qmxh.leaflet_simple.ui.Interface.OnPasswordPayClickListener;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.merchantHomePage.SellerHomePageActivity;
+import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mall.payfor.ConfirmOrderActivity;
+import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mall.payfor.ThirdPayActivity;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mall.payutil.AuthResult;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mall.payutil.PayResult;
+import leaflet.miaoa.qmxh.leaflet_simple.ui.widget.PopEnterPassword;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.Login.WelcomeActivity.Body;
 import static leaflet.miaoa.qmxh.leaflet_simple.Login.WelcomeActivity.Usertel;
@@ -46,11 +51,12 @@ import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.addAdver;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.addAdverAlipay;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.alipay;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.alipayRefund;
+import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.checkUserPayWord;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.deleteNewAdverByNum;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.initialTimeOutMs;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.useraction_balance;
 
-public class ThirdPaySellerActivity extends BaseOtherActivity implements View.OnClickListener{
+public class ThirdPaySellerActivity extends BaseOtherActivity implements OnPasswordPayClickListener,View.OnClickListener{
 
     private RelativeLayout iv_back;
     private TextView pay_totalmoney;
@@ -88,6 +94,7 @@ public class ThirdPaySellerActivity extends BaseOtherActivity implements View.On
     private QMUITipDialog LondingDialog;
     private static final int SDK_PAY_FLAG = 1;
     private static final int SDK_AUTH_FLAG = 2;
+    private QMUITipDialog LondingDialog2;
     @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
         @SuppressWarnings("unused")
@@ -248,7 +255,14 @@ public class ThirdPaySellerActivity extends BaseOtherActivity implements View.On
                 if(balance){
                     //调余额支付
                     tv_payOrder.setClickable(false);
-                    addAdver();
+                    LondingDialog2= new QMUITipDialog.Builder(this)
+                            .setIconType(QMUITipDialog.Builder.ICON_TYPE_LOADING)
+                            .setTipWord("提交中···")
+                            .create();
+
+                    LondingDialog2.show();
+                    checkUserPayWord(false);
+
                 }else if(weixinPay){
                     //调微信支付
                     tv_payOrder.setClickable(false);
@@ -607,5 +621,50 @@ public class ThirdPaySellerActivity extends BaseOtherActivity implements View.On
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         mQueue.add(stringRequest);
+    }
+    //获取支付密码
+    private void checkUserPayWord(final Boolean flag){
+        RequestQueue mQueue = Volley.newRequestQueue(this);
+        final StringRequest stringRequest = new StringRequest(
+                checkUserPayWord+"?uNum=" + Usertel,
+                new Response.Listener<String>() {
+
+                    @Override
+                    public void onResponse(String response) {
+                        LondingDialog2.dismiss();
+
+                        PopEnterPassword popEnterPassword = new PopEnterPassword(ThirdPaySellerActivity.this,ThirdPaySellerActivity.this,response,flag);
+//                        PopEnterPassword popEnterPassword = new PopEnterPassword(ConfirmOrderActivity.this);
+                        // 显示窗口
+                        popEnterPassword.showAtLocation(ThirdPaySellerActivity.this.findViewById(R.id.layoutContent),
+                                Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0); // 设置layout在PopupWindow中显示的位置
+
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                LondingDialog2.dismiss();
+                Toast.makeText(ThirdPaySellerActivity.this, "请检查网络设置", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(initialTimeOutMs,// 默认超时时间，应设置一个稍微大点儿的，例如本处的500000
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        mQueue.add(stringRequest);
+    }
+    /*
+       flag:ture 余额支付
+       flag:false 混合支付
+    */
+    @Override
+    public void psdSuccess(Boolean flag) {
+        if(flag){
+            //余额支付
+            addAdver();
+        }else {
+
+        }
     }
 }

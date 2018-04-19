@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.CountDownTimer;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -52,6 +54,8 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     private String strCode;
     private String telString;
     private String psd_jiami;
+    private CheckBox cbDisplayPassword;
+    private CheckBox cbDisplayPassword1;
     @Override
     protected void setContentView() {
         setContentView(R.layout.activity_register);
@@ -68,8 +72,40 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         et_password = (EditText) findViewById(R.id.et_password);
         tv_protocol = (TextView) findViewById(R.id.tv_protocol);
         checkBoxProtocol = (CheckBox) findViewById(R.id.checkBoxProtocol);
+
         et_password_confirm = (EditText) findViewById(R.id.et_password_confirm);
         checkBoxProtocol.setChecked(true);
+        cbDisplayPassword = (CheckBox) findViewById(R.id.cbDisplayPassword);
+        cbDisplayPassword1 = (CheckBox) findViewById(R.id.cbDisplayPassword1);
+        cbDisplayPassword.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                Log.d(TAG, "onCheckedChanged: "+isChecked);
+                if(isChecked){
+//选择状态 显示明文--设置为可见的密码
+                    et_password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                }else {
+//默认状态显示密码--设置文本 要一起写才能起作用 InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD
+                    et_password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
+            }
+        });
+        cbDisplayPassword1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                Log.d(TAG, "onCheckedChanged: "+isChecked);
+                if(isChecked){
+//选择状态 显示明文--设置为可见的密码
+                    et_password_confirm.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                }else {
+//默认状态显示密码--设置文本 要一起写才能起作用 InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD
+                    et_password_confirm.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
+            }
+        });
+
+
+
         et_register_phonenumber.addTextChangedListener(new TextWatcher() {
 
             @Override

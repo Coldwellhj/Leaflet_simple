@@ -18,6 +18,7 @@ import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.bean.Constants;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.merchantHomePage.SellerHomePageActivity;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mall.payfor.BuyAfterActivity;
+import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mall.payfor.ConfirmOrderActivity;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.Login.WelcomeActivity.Body;
 
@@ -67,7 +68,8 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
 					intent.putExtra("pay","true");
 					startActivity(intent);
 				}else {
-					Intent intent=new Intent(WXPayEntryActivity.this,BuyAfterActivity.class);
+					Intent intent=new Intent(WXPayEntryActivity.this,ConfirmOrderActivity.class);
+					intent.putExtra("finish",true);
 					startActivity(intent);
 				}
 

@@ -283,11 +283,17 @@ public class SellerHomeFinishedFragment extends Fragment {
                                         Long uploadBegin=jsonObject.getLong("uploadBegin");
                                         Long uploadEnd=jsonObject.getLong("uploadEnd");
                                         List<String > advList_picture=new ArrayList<String>();
-                                        String adv_picture[]=aMatter.split("<-->");
+                                        if("true".equals(aType)){
+                                            advList_picture.add(aCover);
+                                            advList_picture.add(aMatter);
+                                        }else {
+                                            String adv_picture[]=aMatter.split("<-->");
 
-                                        for(int j=0;j<adv_picture.length;j++){
-                                            advList_picture.add(j,adv_picture[j]);
+                                            for(int j=0;j<adv_picture.length;j++){
+                                                advList_picture.add(j,adv_picture[j]);
+                                            }
                                         }
+
                                         ListActivityBean.Adv adv=listActivityBean.new Adv();
                                         adv.setaId(aId);
                                         adv.setaCover(aCover);

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layoutContent"
     tools:context="leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mall.payfor.ThirdPayActivity">
     <RelativeLayout
         android:id="@+id/head"
@@ -113,7 +114,7 @@
             android:layout_height="26dp"
           android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
-            android:src="@mipmap/weixin" />
+            android:src="@mipmap/mybalance" />
 
         <TextView
             android:layout_toRightOf="@+id/iv_balance"

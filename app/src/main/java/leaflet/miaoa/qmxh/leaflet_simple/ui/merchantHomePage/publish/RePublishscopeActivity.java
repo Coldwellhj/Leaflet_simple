@@ -171,10 +171,10 @@ public class RePublishscopeActivity extends BaseOtherActivity implements View.On
         et_adv_price.setText(price);
         if(totalPrice .compareTo(c)==-1){
             payPrice=totalPrice.add(b).setScale(2, BigDecimal.ROUND_UP);
-            cover_charge=b.setScale(2, BigDecimal.ROUND_UP);
+            cover_charge=b.setScale(2, BigDecimal.ROUND_HALF_UP);
         }else {
             payPrice=totalPrice.multiply(a).setScale(2, BigDecimal.ROUND_UP);
-            cover_charge= payPrice.multiply(b).setScale(2, BigDecimal.ROUND_UP);
+            cover_charge= payPrice.multiply(b).setScale(2, BigDecimal.ROUND_HALF_UP);
         }
         payMoney.setText("需支付"+totalPrice+"元");
         tv_center_area.setOnClickListener(this);
@@ -238,13 +238,13 @@ public class RePublishscopeActivity extends BaseOtherActivity implements View.On
                             .multiply(new BigDecimal(et_adv_totalNum.getText().toString().trim()));
                     if(totalprice .compareTo(c)==-1){
                         payPrice=totalprice.add(b).setScale(2, BigDecimal.ROUND_UP);
-                        cover_charge=b.setScale(2, BigDecimal.ROUND_UP);
+                        cover_charge=b.setScale(2, BigDecimal.ROUND_HALF_UP);
                     }else {
                         payPrice= (new BigDecimal(et_adv_price.getText().toString().trim())
                                 .multiply(new BigDecimal(et_adv_totalNum.getText().toString().trim())).multiply(a)).setScale(2, BigDecimal.ROUND_UP);
 
                         cover_charge= (new BigDecimal(et_adv_price.getText().toString().trim())
-                                .multiply(new BigDecimal(et_adv_totalNum.getText().toString().trim())).multiply(b)).setScale(2, BigDecimal.ROUND_UP);
+                                .multiply(new BigDecimal(et_adv_totalNum.getText().toString().trim())).multiply(b)).setScale(2, BigDecimal.ROUND_HALF_UP);
                     }
 
 
