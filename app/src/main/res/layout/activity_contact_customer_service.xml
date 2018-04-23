@@ -86,6 +86,7 @@
         android:textSize="16sp"
         android:gravity="center"/>
     <TextView
+        android:id="@+id/commit"
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_marginLeft="15dp"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#f5f5f5"
     tools:context="leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mine.Personal_mine_Fragment">
     <LinearLayout
         android:orientation="vertical"
