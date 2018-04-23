@@ -41,6 +41,7 @@
             android:src="@mipmap/seller_home_uncheck"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:visibility="gone"
             android:layout_marginRight="14dp"/>
     </RelativeLayout>
     <RelativeLayout

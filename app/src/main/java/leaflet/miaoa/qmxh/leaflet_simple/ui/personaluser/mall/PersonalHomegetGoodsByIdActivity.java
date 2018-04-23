@@ -2,12 +2,14 @@ package leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mall;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.widget.GridLayoutManager;
 import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,6 +38,7 @@ import leaflet.miaoa.qmxh.leaflet_simple.ui.adapter.GetGoodsRulersAdapter;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.widget.GlideImageLoader;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.widget.MaxRecyclerView;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.widget.MyPayPopupWindow;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.StatusBarCompat;
 import leaflet.miaoa.qmxh.leaflet_simple.utils.ToastUtils;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.getCoinAttribute;
@@ -65,6 +68,7 @@ public class PersonalHomegetGoodsByIdActivity extends BaseOtherActivity {
     private GetGoodsPicturesAdapter getGoodsPicturesAdapter;
     private MyPayPopupWindow myPopupWindow;
     private List<String>advList  = new ArrayList<String>();
+    private List<String>advList1  = new ArrayList<String>();//临时只需要前3张
     private List<String>introduceList  = new ArrayList<String>();
     private List<String>rulesList  = new ArrayList<String>();
     private List<ListActivityBean.Goods_shopping_mall> goods_shopping_malls_list = new ArrayList<ListActivityBean.Goods_shopping_mall>();
@@ -78,7 +82,10 @@ public class PersonalHomegetGoodsByIdActivity extends BaseOtherActivity {
             switch (msg.what) {
                 case 1:
                     getCoinAttribute();
-                    banner.setImages(advList)
+                    for(int i=0;i<3;i++){
+                        advList1.add(advList.get(i));
+                    }
+                    banner.setImages(advList1)
                             .setImageLoader(new GlideImageLoader())
                             .start();
 //                    cNowPrice.setText(goods_shopping_malls_list.get(0).getcNowPrice());
@@ -129,6 +136,8 @@ public class PersonalHomegetGoodsByIdActivity extends BaseOtherActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_personal_homeget_goods_by_id);
         initView();
         Intent intent =getIntent();

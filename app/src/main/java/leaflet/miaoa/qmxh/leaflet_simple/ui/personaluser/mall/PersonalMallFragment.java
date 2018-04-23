@@ -126,7 +126,7 @@ public class PersonalMallFragment extends BaseFragment implements View.OnClickLi
 
         listFragment.add(new PersonalMallPreferred_commodityFragment());
 
-        listFragment.add(new PersonalMallTaobaoFragment());
+//        listFragment.add(new PersonalMallTaobaoFragment());
         mPagerAdapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager(),listFragment);
         vp_personal_mall_viewpager.setAdapter(mPagerAdapter);
         vp_personal_mall_viewpager.setCurrentItem(mDestPage.getPosition(), false);
@@ -145,27 +145,27 @@ public class PersonalMallFragment extends BaseFragment implements View.OnClickLi
 
         tabSegment.setupWithViewPager(vp_personal_mall_viewpager, false);
         tabSegment.setMode(QMUITabSegment.MODE_FIXED);
-        tabSegment.addOnTabSelectedListener(new QMUITabSegment.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(int index) {
-                tabSegment.hideSignCountView(index);
-            }
-
-            @Override
-            public void onTabUnselected(int index) {
-
-            }
-
-            @Override
-            public void onTabReselected(int index) {
-                tabSegment.hideSignCountView(index);
-            }
-
-            @Override
-            public void onDoubleTap(int index) {
-
-            }
-        });
+//        tabSegment.addOnTabSelectedListener(new QMUITabSegment.OnTabSelectedListener() {
+//            @Override
+//            public void onTabSelected(int index) {
+//                tabSegment.hideSignCountView(index);
+//            }
+//
+//            @Override
+//            public void onTabUnselected(int index) {
+//
+//            }
+//
+//            @Override
+//            public void onTabReselected(int index) {
+//                tabSegment.hideSignCountView(index);
+//            }
+//
+//            @Override
+//            public void onDoubleTap(int index) {
+//
+//            }
+//        });
 
 
     }

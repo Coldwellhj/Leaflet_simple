@@ -100,12 +100,14 @@ public class ConfirmOrderActivity extends BaseOtherActivity implements OnPasswor
                         //判断余额是否充足
                         if(totalprice.compareTo(mybalance) == 1){
                             tv_Balance_deduction.setText("余额已抵扣 ¥"+mybalance.setScale(2, BigDecimal.ROUND_HALF_UP));
-
+                            pay_totalmoney.setText("¥"+totalprice.subtract(mybalance).setScale(2, BigDecimal.ROUND_HALF_UP));
                         }else {
                             tv_Balance_deduction.setText("余额已抵扣 ¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
+                            pay_totalmoney.setText("¥"+totalprice.subtract(totalprice).setScale(2, BigDecimal.ROUND_HALF_UP));
                         }
                     }else {
                         tv_Balance_deduction.setText("");
+                        pay_totalmoney.setText("¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
                     }
 
                     break;
@@ -119,12 +121,14 @@ public class ConfirmOrderActivity extends BaseOtherActivity implements OnPasswor
                         //判断余额是否充足
                         if(totalprice.compareTo(mybalance) == 1){
                             tv_Balance_deduction.setText("余额已抵扣 ¥"+mybalance.setScale(2, BigDecimal.ROUND_HALF_UP));
-
+                            pay_totalmoney.setText("¥"+totalprice.subtract(mybalance).setScale(2, BigDecimal.ROUND_HALF_UP));
                         }else {
                             tv_Balance_deduction.setText("余额已抵扣 ¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
+                            pay_totalmoney.setText("¥"+totalprice.subtract(totalprice).setScale(2, BigDecimal.ROUND_HALF_UP));
                         }
                     }else {
                         tv_Balance_deduction.setText("");
+                        pay_totalmoney.setText("¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
                     }
 
                     break;
@@ -296,7 +300,7 @@ public class ConfirmOrderActivity extends BaseOtherActivity implements OnPasswor
             public void onAmountChange(View view, int amount) {
                 totalprice= BigDecimal.valueOf(amount_view.getAmount()).multiply(new BigDecimal(attributePrice));
                 totalmoney.setText("¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
-                pay_totalmoney.setText("¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
+//                pay_totalmoney.setText("¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
                 Message message=new Message();
                 message.what=3;
                 handler.sendMessage(message);
@@ -311,16 +315,20 @@ public class ConfirmOrderActivity extends BaseOtherActivity implements OnPasswor
                     //选中
                     isuse_balance=false;
                     tv_Balance_deduction.setText("");
+                    pay_totalmoney.setText("¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
+
                 }else{
                     //初始状态
                     isuse_balance=true;
                     //判断余额是否充足
                     if(totalprice.compareTo(mybalance) == 1){
                         tv_Balance_deduction.setText("余额已抵扣 ¥"+mybalance.setScale(2, BigDecimal.ROUND_HALF_UP));
-
+                        pay_totalmoney.setText("¥"+totalprice.subtract(mybalance).setScale(2, BigDecimal.ROUND_HALF_UP));
                     }else {
                         tv_Balance_deduction.setText("余额已抵扣 ¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
+                        pay_totalmoney.setText("¥"+totalprice.subtract(totalprice).setScale(2, BigDecimal.ROUND_HALF_UP));
                     }
+
 
                 }
             }
@@ -336,7 +344,7 @@ public class ConfirmOrderActivity extends BaseOtherActivity implements OnPasswor
         tv_type.setText(attribute+":"+specification+";");
         tv_price.setText("¥"+attributePrice);
         totalmoney.setText("¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
-        pay_totalmoney.setText("¥"+totalprice.setScale(2, BigDecimal.ROUND_HALF_UP));
+
     }
 
     @Override

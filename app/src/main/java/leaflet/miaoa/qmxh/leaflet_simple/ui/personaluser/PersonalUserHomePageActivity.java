@@ -92,12 +92,12 @@ public class PersonalUserHomePageActivity extends BaseFragmentActivity implement
     }
     @Override
     protected void setContentView() {
-        setContentView(R.layout.activity_personal_user_home_page);
-        StatusBarCompat.compat(this, Color.parseColor("#ffffffff"));
-        //透明状态栏
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
-//进入APP时触发广告过期动作并接收消息提醒
+        setContentView(R.layout.activity_personal_user_home_page);
+
+
+
+        //进入APP时触发广告过期动作并接收消息提醒
         overdueReminder();
         //设置别名
         JPushInterface.setAlias(this,1,Usertel);

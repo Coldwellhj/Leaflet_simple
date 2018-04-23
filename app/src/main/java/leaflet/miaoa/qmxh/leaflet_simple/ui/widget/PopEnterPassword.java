@@ -94,7 +94,7 @@ public class PopEnterPassword extends PopupWindow {
                 }
                 if(psd_jiami.equals(psd)){
                     dismiss();
-                    Toast.makeText(mContext, "支付成功" , Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(mContext, "支付成功" , Toast.LENGTH_SHORT).show();
                         passwordPayClickListener.psdSuccess(flag);
 
                 }else {

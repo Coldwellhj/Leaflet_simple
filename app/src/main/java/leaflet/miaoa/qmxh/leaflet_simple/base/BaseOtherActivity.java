@@ -6,11 +6,13 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import leaflet.miaoa.qmxh.leaflet_simple.Login.LoginActivity;
+import leaflet.miaoa.qmxh.leaflet_simple.utils.StatusBarCompat;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.base.BaseFragmentActivity.activityController_bf;
 
@@ -31,7 +33,7 @@ public class BaseOtherActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        StatusBarCompat.compat(this, Color.parseColor("#999999"));
             //将所有的Activity添加进来
         activityController_bf.addActivity(this);
         }

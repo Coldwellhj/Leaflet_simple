@@ -3,14 +3,14 @@
     android:id="@+id/recycler_item_root"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="5dp"
+    android:layout_marginTop="2dp"
     android:background="@color/white"
     android:orientation="vertical">
 
     <ImageView
-        android:layout_marginTop="10dp"
+
         android:id="@+id/iv_home_goods"
-        android:layout_marginLeft="16dp"
+
         android:scaleType="centerCrop"
         android:layout_width="178dp"
         android:layout_height="178dp" />
@@ -18,28 +18,31 @@
         android:id="@+id/tv_name"
         android:layout_marginTop="8dp"
         android:layout_width="178dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+
+        android:padding="10dp"
+
         android:layout_height="wrap_content"
         android:textColor="@color/color_tv_name"
+
         android:text="dafasfasdfasdfj航卡拉胶噶三季度拉上来快乐圣诞节发送"
         android:textSize="14sp"/>
     <TextView
         android:id="@+id/tv_introduce"
         android:layout_marginTop="3dp"
         android:layout_width="178dp"
-        android:layout_marginLeft="16dp"
+
         android:layout_marginRight="16dp"
         android:maxLines="2"
         android:ellipsize="end"
         android:paddingRight="15dp"
+
         android:layout_height="30dp"
         android:textColor="@color/color_tv_cFormerPrice"
         android:text="dafasfasdfasdfj航卡拉胶噶三季度拉上来快乐圣诞节发送"
         android:textSize="12sp"/>
     <RelativeLayout
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="16dp"
+
         android:layout_marginRight="16dp"
         android:layout_width="178dp"
         android:layout_height="wrap_content">

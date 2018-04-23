@@ -82,6 +82,7 @@ public class WB_pUrlActivity extends BaseOtherActivity {
 
         Intent intent =this.getIntent();
         pUrl=intent.getStringExtra("pUrl");
+
 //        downloadUrl=intent.getStringExtra("downloadUrl");
 
         initView();
@@ -113,8 +114,9 @@ public class WB_pUrlActivity extends BaseOtherActivity {
         wb_purl.getSettings().setDomStorageEnabled(true);
         wb_purl.getSettings().setDatabaseEnabled(true);
         wb_purl.getSettings().setSupportZoom(true); // 支持缩放
-
+//      showDownloadDialog();//直接是下载地址的话
         wb_purl.loadUrl(pUrl);
+//        wb_purl.loadUrl("https://www.xiaochuandan.club/MiaoA/xcd-gzh/app-release.apk");
 //        wb_purl.loadUrl("http://gdown.baidu.com/data/wisegame/7ca0b9691abd23ac/baidufanyi_73.apk");
 
 
