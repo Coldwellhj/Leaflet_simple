@@ -225,7 +225,7 @@ public class ThirdPaySellerActivity extends BaseOtherActivity implements OnPassw
                     iv_bl_checked.setImageDrawable(getResources().getDrawable(R.mipmap.checked));
                     iv_wx_checked.setImageDrawable(getResources().getDrawable(R.mipmap.unchecked));
                     iv_zhifubao_unchecked.setImageDrawable(getResources().getDrawable(R.mipmap.unchecked));
-                    pay_totalmoney.setText( new BigDecimal(totalprice).subtract(new BigDecimal(cover_charge))+"元");
+                    pay_totalmoney.setText(new BigDecimal(totalprice).subtract(new BigDecimal(cover_charge))+"元");
                 }
 
                 break;
@@ -261,7 +261,7 @@ public class ThirdPaySellerActivity extends BaseOtherActivity implements OnPassw
                             .create();
 
                     LondingDialog2.show();
-                    checkUserPayWord(false);
+                    checkUserPayWord(true);
 
                 }else if(weixinPay){
                     //调微信支付
@@ -666,5 +666,10 @@ public class ThirdPaySellerActivity extends BaseOtherActivity implements OnPassw
         }else {
 
         }
+    }
+
+    @Override
+    public void psdFailed() {
+        tv_payOrder.setClickable(true);
     }
 }

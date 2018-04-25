@@ -174,7 +174,7 @@ public class RePublishscopeActivity extends BaseOtherActivity implements View.On
             cover_charge=b.setScale(2, BigDecimal.ROUND_HALF_UP);
         }else {
             payPrice=totalPrice.multiply(a).setScale(2, BigDecimal.ROUND_UP);
-            cover_charge= payPrice.multiply(b).setScale(2, BigDecimal.ROUND_HALF_UP);
+            cover_charge= totalPrice.multiply(b).setScale(2, BigDecimal.ROUND_HALF_UP);
         }
         payMoney.setText("需支付"+totalPrice+"元");
         tv_center_area.setOnClickListener(this);

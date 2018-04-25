@@ -63,7 +63,7 @@
         <ImageView
             android:layout_width="22dp"
             android:layout_height="22dp"
-            android:src="@mipmap/turn_right"
+            android:src="@drawable/spread"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="32dp"/>
@@ -84,7 +84,7 @@
         <ImageView
             android:layout_width="22dp"
             android:layout_height="22dp"
-            android:src="@mipmap/turn_right"
+            android:src="@drawable/spread"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="32dp"/>
@@ -116,7 +116,7 @@
         <ImageView
             android:layout_width="22dp"
             android:layout_height="22dp"
-            android:src="@mipmap/turn_right"
+            android:src="@drawable/spread"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="32dp"/>
@@ -147,7 +147,7 @@
         <ImageView
             android:layout_width="22dp"
             android:layout_height="22dp"
-            android:src="@mipmap/turn_right"
+            android:src="@drawable/spread"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="32dp"/>
@@ -185,7 +185,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="32dp"
-            android:src="@mipmap/turn_right" />
+            android:src="@drawable/spread" />
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/rl_personal_information_resetpaypassword"
@@ -209,7 +209,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="32dp"
-            android:src="@mipmap/turn_right" />
+            android:src="@drawable/spread" />
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/rl_personal_information_modify_phonenumber"
@@ -227,7 +227,7 @@
         <ImageView
             android:layout_width="22dp"
             android:layout_height="22dp"
-            android:src="@mipmap/turn_right"
+            android:src="@drawable/spread"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="32dp"/>

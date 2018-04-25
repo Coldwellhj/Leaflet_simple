@@ -27,6 +27,7 @@ import com.squareup.picasso.Picasso;
 
 import org.json.JSONObject;
 
+import leaflet.miaoa.qmxh.leaflet_simple.Login.WB_ProtocolActivity;
 import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.PersonalUserHomePageActivity;
 import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mine.ContactCustomerServiceActivity;
@@ -38,6 +39,8 @@ import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mine.Withdraw_cash_thir
 import leaflet.miaoa.qmxh.leaflet_simple.ui.widget.ZQImageViewRoundOval;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.Login.WelcomeActivity.Usertel;
+import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.adverSign;
+import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.protocolUrl;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.useraction_balance;
 import static leaflet.miaoa.qmxh.leaflet_simple.bean.Https.useraction_tomodifyUser;
 
@@ -147,7 +150,9 @@ public class Seller_mine_Fragment extends Fragment implements View.OnClickListen
                 startActivity(intent5);
                 break;
             case R.id.rl_adv_design:
-
+                Intent intent6 =new Intent(getActivity(),WB_FuwushangActivity.class);
+                intent6.putExtra("pUrl",adverSign);
+                startActivity(intent6);
                 break;
 
             case R.id.withdraw_cash:

@@ -37,6 +37,7 @@
         android:background="@color/gray"/>
     <leaflet.miaoa.qmxh.leaflet_simple.ui.widget.LRecyclerView
         android:id="@+id/list"
+
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:descendantFocusability="blocksDescendants"

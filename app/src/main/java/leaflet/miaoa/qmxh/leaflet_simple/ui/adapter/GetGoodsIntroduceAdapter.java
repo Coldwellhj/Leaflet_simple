@@ -37,8 +37,9 @@ public class GetGoodsIntroduceAdapter extends RecyclerView.Adapter<GetGoodsIntro
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
 
         viewHolder.position = position;
-        viewHolder.good_introduce.setText(introduceList.get(position));
 
+        viewHolder.good_introduce.setText("·"+introduceList.get(position));
+        viewHolder.good_introduce.setTextSize(14);
         viewHolder.itemView.setTag(position);
     }
     //获取数据的数量

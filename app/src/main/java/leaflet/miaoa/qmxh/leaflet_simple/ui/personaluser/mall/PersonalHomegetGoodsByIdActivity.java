@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.widget.GridLayoutManager;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.RelativeLayout;
@@ -186,6 +187,7 @@ public class PersonalHomegetGoodsByIdActivity extends BaseOtherActivity {
                     myPopupWindow = new MyPayPopupWindow(PersonalHomegetGoodsByIdActivity.this,attributeList);
                     myPopupWindow.showAtLocation(PersonalHomegetGoodsByIdActivity.this.findViewById(R.id.head),
                             Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
+
                 }else {
                     ToastUtils.showShort(PersonalHomegetGoodsByIdActivity.this,"暂无可购买的商品");
                 }

@@ -6,4 +6,5 @@ package leaflet.miaoa.qmxh.leaflet_simple.ui.Interface;
 
 public interface OnPasswordPayClickListener {
     public void psdSuccess(Boolean flag);//ture 为余额支付，false为混合支付
+    public void psdFailed();//
 }

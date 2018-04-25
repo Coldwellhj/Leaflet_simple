@@ -82,7 +82,7 @@
         android:hint="      活动内容，活动描述，活动地点、日期、店铺等"
 
         android:gravity="top|left"
-        android:textSize="12sp"
+        android:textSize="16sp"
         android:layout_margin="10dp"
         android:background="@drawable/seller_description_bg"
         android:id="@+id/et_description"

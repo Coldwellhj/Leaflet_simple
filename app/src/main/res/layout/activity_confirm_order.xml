@@ -392,7 +392,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="16dp"
                 android:layout_width="48dp"
-                android:layout_height="30dp"
+                android:layout_height="48dp"
                 android:layout_centerVertical="true"
                 android:background="@drawable/mybalance"
                 android:minWidth="48dp"

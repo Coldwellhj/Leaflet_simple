@@ -28,6 +28,7 @@ import com.android.volley.toolbox.Volley;
 import com.qmuiteam.qmui.widget.dialog.QMUITipDialog;
 
 import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.base.BaseFragment;
@@ -164,6 +165,7 @@ public class PasswordLoginFragment extends BaseFragment implements View.OnClickL
                 try {
                     byte[ ] encrypted = AesCBC.AES_CBC_Encrypt(psd.getBytes("UTF-8"), AesCBC.key.getBytes("UTF-8"), AesCBC.iv.getBytes("UTF-8"));
                     psdString = Base64.encode(encrypted);
+
                 } catch (UnsupportedEncodingException e) {
                     e.printStackTrace();
                 }
@@ -204,7 +206,7 @@ public class PasswordLoginFragment extends BaseFragment implements View.OnClickL
 
                             RequestQueue mQueue = Volley.newRequestQueue(getActivity());
                             StringRequest stringRequest = new StringRequest(
-                                    loginpsd + "?uNum=" + telString + "&uPassword="+psdString + "&umark=" + jumpFlag + "&isLogin=" + isLoginstr +"&uMac="+getAdresseMAC(getActivity()),
+                                    loginpsd + "?uNum=" + telString + "&uPassword="+URLEncoder.encode(psdString) + "&umark=" + jumpFlag + "&isLogin=" + isLoginstr +"&uMac="+getAdresseMAC(getActivity()),
 //                        doInUser+"?uname="+tel,
                                     new Response.Listener<String>() {
                                         @SuppressLint("WrongConstant")
@@ -254,7 +256,7 @@ public class PasswordLoginFragment extends BaseFragment implements View.OnClickL
                             else if (jumpFlag == 0){
                                 RequestQueue mQueue = Volley.newRequestQueue(getActivity());
                                 StringRequest stringRequest = new StringRequest(
-                                        loginpsd + "?uNum=" + telString + "&uPassword="+psdString + "&umark=" + jumpFlag + "&isLogin=" + isLoginstr+"&uMac="+getAdresseMAC(getActivity()) ,
+                                        loginpsd + "?uNum=" + telString + "&uPassword="+URLEncoder.encode(psdString) + "&umark=" + jumpFlag + "&isLogin=" + isLoginstr+"&uMac="+getAdresseMAC(getActivity()) ,
 //                        doInUser+"?uname="+tel,
                                         new Response.Listener<String>() {
                                             @SuppressLint("WrongConstant")

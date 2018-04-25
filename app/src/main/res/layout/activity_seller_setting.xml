@@ -50,7 +50,7 @@
         <CheckBox
             android:id="@+id/screen_notify"
             android:layout_width="50dp"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="18dp"
@@ -78,7 +78,7 @@
         <CheckBox
             android:id="@+id/auto_playVideo"
             android:layout_width="50dp"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="18dp"
@@ -105,7 +105,7 @@
         <CheckBox
             android:id="@+id/ck_autoDownload"
             android:layout_width="50dp"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="18dp"
@@ -189,7 +189,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="18dp"
-            android:src="@mipmap/turn_right" />
+            android:src="@drawable/spread" />
     </RelativeLayout>
     <TextView
         android:id="@+id/login_off"

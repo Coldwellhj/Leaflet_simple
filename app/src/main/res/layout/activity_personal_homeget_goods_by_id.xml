@@ -168,7 +168,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="详细描述："
-                        android:textSize="13sp"
+                        android:textSize="16sp"
                         />
                     <leaflet.miaoa.qmxh.leaflet_simple.ui.widget.MaxRecyclerView
                         android:layout_below="@+id/tv_describe"

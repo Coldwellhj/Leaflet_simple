@@ -25,6 +25,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 import leaflet.miaoa.qmxh.leaflet_simple.R;
 import leaflet.miaoa.qmxh.leaflet_simple.base.BaseActivity;
@@ -299,7 +300,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         }
         RequestQueue mQueue = Volley.newRequestQueue(RegisterActivity.this);
         StringRequest stringRequest = new StringRequest(
-                register + "?uNum=" + et_register_phonenumber.getText().toString().trim()+"&uPassword="+psd_jiami  ,
+                register + "?uNum=" + et_register_phonenumber.getText().toString().trim()+"&uPassword="+ URLEncoder.encode(psd_jiami)  ,
 //
                 new Response.Listener<String>() {
                     @SuppressLint("WrongConstant")

@@ -99,6 +99,7 @@ public class PopEnterPassword extends PopupWindow {
 
                 }else {
                     dismiss();
+                    passwordPayClickListener.psdFailed();
                     Toast.makeText(mContext, "支付密码不正确" , Toast.LENGTH_SHORT).show();
                 }
             }

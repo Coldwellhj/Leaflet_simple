@@ -8,12 +8,14 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.WindowManager;
 
 import com.readystatesoftware.systembartint.SystemBarTintManager;
@@ -22,8 +24,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import leaflet.miaoa.qmxh.leaflet_simple.Login.LoginActivity;
+import leaflet.miaoa.qmxh.leaflet_simple.Login.WelcomeActivity;
 import leaflet.miaoa.qmxh.leaflet_simple.R;
+
+import leaflet.miaoa.qmxh.leaflet_simple.utils.ScreenListener;
 import leaflet.miaoa.qmxh.leaflet_simple.utils.StatusBarCompat;
+
+import static leaflet.miaoa.qmxh.leaflet_simple.jgts.MyReceiver.logout;
 
 
 /**
@@ -33,6 +40,8 @@ import leaflet.miaoa.qmxh.leaflet_simple.utils.StatusBarCompat;
 public abstract class BaseFragmentActivity  extends FragmentActivity {
 
     private Context context;
+    private ScreenListener listener;
+
     //定义一个内部类对象
     public  static ActivityController activityController_bf;
     private ForceOfflineReceiver receiver;
@@ -44,6 +53,31 @@ public abstract class BaseFragmentActivity  extends FragmentActivity {
             savedInstanceState.putParcelable("android.support:fragments",null);
         }
         super.onCreate(savedInstanceState);
+
+        listener = new ScreenListener(this);
+        listener.register(new ScreenListener.ScreenStateListener() {
+            @Override
+            public void onScreenOn() {
+                Log.e("zhang", "MainActivity --> onScreenOn--> ");
+            }
+
+            @Override
+            public void onScreenOff() {
+                Log.e("zhang", "MainActivity --> onScreenOff--> ");
+            }
+
+            @Override
+            public void onUserPresent() {
+                Log.e("zhang", "MainActivity --> onUserPresent--> ");
+                if("true".equals(logout)&&receiver != null){
+                    //发送广播
+                    Intent intent1 = new Intent("forceOffline");
+                    context.sendBroadcast(intent1);
+                    logout="false";
+                }
+
+            }
+        });
 
         context = BaseFragmentActivity.this;
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //竖屏
@@ -74,6 +108,12 @@ public abstract class BaseFragmentActivity  extends FragmentActivity {
         IntentFilter intentFilter = new IntentFilter("forceOffline");
         receiver = new ForceOfflineReceiver();
         registerReceiver(receiver, intentFilter);
+        if("true".equals(logout)&&receiver != null){
+            //发送广播
+            Intent intent1 = new Intent("forceOffline");
+            context.sendBroadcast(intent1);
+            logout="false";
+        }
     }
 
     @Override
@@ -88,6 +128,9 @@ public abstract class BaseFragmentActivity  extends FragmentActivity {
     protected void onDestroy() {
         //在这个生命周期中销毁所有的Activity
         activityController_bf.removeActivity(this);
+        if (listener != null) {
+            listener.unregister();
+        }
         super.onDestroy();
     }
     /**设置布局xml*/

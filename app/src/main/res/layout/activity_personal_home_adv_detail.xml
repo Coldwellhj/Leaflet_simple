@@ -103,5 +103,5 @@
         android:layout_marginRight="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="11sp"/>
+        android:textSize="16sp"/>
 </LinearLayout>

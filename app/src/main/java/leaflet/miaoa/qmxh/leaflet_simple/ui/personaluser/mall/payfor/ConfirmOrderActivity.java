@@ -548,4 +548,9 @@ public class ConfirmOrderActivity extends BaseOtherActivity implements OnPasswor
             startActivity(intent1);
         }
     }
+
+    @Override
+    public void psdFailed() {
+
+    }
 }

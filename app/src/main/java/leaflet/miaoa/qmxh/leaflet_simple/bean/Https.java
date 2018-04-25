@@ -20,7 +20,8 @@ public class Https {
 
     public static String overdueReminder=basehttp+"MiaoA/overdueReminder.action";//进入APP时触发广告过期动作
     public static String getToken=basehttp+"MiaoA/getToken.action";//获取七牛云上传时的token
-    public static String protocolUrl =basehttp+"MiaoA/xcd-gzh/html/protocol.jsp";//用户协议url
+    public static String protocolUrl =basehttp+"MiaoA/xcd-gzh/html/AndroidProtocol.jsp";//用户协议url
+    public static String adverSign =basehttp+"MiaoA/xcd-gzh/html/adverSign.jsp";//广告设计服务url
     public static String loginpsd=basehttp+"MiaoA/checkloginaction_checkuserlogin.action";//登录
     public static String updateMacLingByNum=basehttp+"MiaoA/updateMacLingByNum.action";//退出登录的时候将Mac值清空
     public static String passwordGet=basehttp+"MiaoA/passwordGet.action";//获得密码

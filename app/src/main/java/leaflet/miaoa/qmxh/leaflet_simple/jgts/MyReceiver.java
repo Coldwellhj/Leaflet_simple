@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import cn.jpush.android.api.JPushInterface;
+
 import leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.mine.PersonalNewsList;
 
 import static leaflet.miaoa.qmxh.leaflet_simple.utils.GetMacAddress.getAdresseMAC;
@@ -18,7 +19,7 @@ import static leaflet.miaoa.qmxh.leaflet_simple.utils.GetMacAddress.getAdresseMA
 
 public class MyReceiver extends BroadcastReceiver {
     private static final String TAG ="MyReceiver";
-
+    public static String logout;
     @Override
     public void onReceive(Context context, Intent intent) {
         Bundle bundle = intent.getExtras();
@@ -36,9 +37,7 @@ public class MyReceiver extends BroadcastReceiver {
                 editor.putInt("umark", 2);
                 editor.putString("islogin", "");
                 editor.commit();
-                //发送广播
-                Intent intent1 = new Intent("forceOffline");
-                context.sendBroadcast(intent1);
+                logout="true";
 
             }
         } else if (JPushInterface.ACTION_NOTIFICATION_RECEIVED.equals(intent.getAction())) {

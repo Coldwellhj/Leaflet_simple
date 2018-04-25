@@ -273,6 +273,7 @@ public class BuyAfterGoodAdapter extends BaseAdapter implements View.OnClickList
             viewHolder.delete_order.setVisibility(View.VISIBLE);
             viewHolder.logistics.setText("查看物流");
             viewHolder.confirm.setText("已收货");
+            viewHolder.confirm.setClickable(false);
             viewHolder.delete_order.setText("删除订单");
             viewHolder.rl_orderNum.setVisibility(View.VISIBLE);
             viewHolder.ifRefund.setVisibility(View.GONE);

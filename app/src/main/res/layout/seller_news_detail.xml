@@ -8,6 +8,7 @@ android:paddingBottom="1dp">
 
     <RelativeLayout
         android:id="@+id/swipe_content"
+        android:background="#f5f5f5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
@@ -27,6 +28,7 @@ android:paddingBottom="1dp">
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/color_tv_cFormerPrice"
             android:text="xxxx"/>
         <LinearLayout
             android:layout_toRightOf="@+id/iv_photo"
@@ -40,12 +42,14 @@ android:paddingBottom="1dp">
             android:layout_marginTop="10dp">
             <TextView
                 android:id="@+id/newsTheme"
+                android:textColor="@color/color_tv_cFormerPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"/>
             <TextView
                 android:id="@+id/newsDetail"
                 android:layout_marginTop="5dp"
+                android:textColor="@color/color_tv_cFormerPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lines="1"

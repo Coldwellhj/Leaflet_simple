@@ -261,7 +261,7 @@ public class MyPayPopupWindow extends PopupWindow {
     /**
      * 关闭窗口
      */
-    private void closePopupWindow() {
+    public  void closePopupWindow() {
         if (popupWindow != null && popupWindow.isShowing()) {
             popupWindow.dismiss();
             popupWindow = null;

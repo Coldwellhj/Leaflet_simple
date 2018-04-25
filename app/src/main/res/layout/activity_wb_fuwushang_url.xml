@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="leaflet.miaoa.qmxh.leaflet_simple.ui.personaluser.home.WB_pUrlActivity">
+  <RelativeLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+      <RelativeLayout
+          android:id="@+id/back"
+          android:layout_width="60dp"
+
+
+          android:layout_height="48dp">
+          <ImageView
+              android:layout_centerInParent="true"
+              android:layout_width="22dp"
+              android:layout_height="22dp"
+              android:src="@drawable/back"/>
+      </RelativeLayout>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:textSize="18sp"
+                android:text="城市服务商"/>
+            <RelativeLayout
+
+                android:id="@+id/iv_refresh"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    <WebView
+        android:id="@+id/wb_purl"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</RelativeLayout>
